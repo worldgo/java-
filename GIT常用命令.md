@@ -25,16 +25,13 @@ $git commit -m '[message]'
 $git push  
 \#推送更新版本到远程仓库  
 
-**至此，一套大致目前用到的流程就走完了**
+**至此，一套大致目前用到的流程就走完了，但还有很多细节设置未写明**
 ---
 ## 新建分支
 $git branch [name]  
 \#新建本地分支
 
 ## 查看分支
->因为git的分支必须指向一个commit，没有任何commit就没有任何分支
->提交第一个commit后git自动创建master分支  
-
 $git branch  
 \#查看本地分支 
 
@@ -45,14 +42,15 @@ $git branch -a
 \#查看本地和远程所有分支
 
 $git remote -v  
-\#可以查看远程仓库的地址(包括push和fetch)
+\#可以查看已有的远程关联-这好比一条引线，线的两头可以绑在不同的分支
 
 ## 远程连接
 $git branch --track [local-branch-name] [remote-branch-name]  
 \#新建分支并与远程分支建立连接
 
 $git remote add [link-name] [remote-url]
-\#建立当前本地分支与远程仓库关联 -**未区分远程分支？**  
+\#添加关联 -**还未绑定分支**  
+$git push --set-upstream [远程关联名] [本地分支名]  **远程对应分支是？**
 
 $git remote remove [link-name]  
 \#取消当前分支的远程关联
@@ -75,8 +73,12 @@ $git diff [local branch] [remote branch];   eg: $git diff master origin/master(r
 
 
 ## 小知识
-在clone之后，GIT会自动将远程仓库命名为origin(就是一别名)。查看分支时候以origin\开头的便是远程分支  
+>在clone之后，GIT会自动将远程仓库命名为origin(就是一别名)。查看分支时候以origin\开头的便是远程分支  
 
-local branch和remote branch是独立并行的，通过fetch和push进行交互  
+>local branch和remote branch是独立并行的，通过fetch和push进行交互  
+
+>因为git的分支必须指向一个commit，没有任何commit就没有任何分支
+>提交第一个commit后git自动创建master分支
+>新建分支在commit之后才会被保存
 
 
