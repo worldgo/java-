@@ -1,4 +1,5 @@
 # GIT
+>![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93czEuc2luYWltZy5jbi9sYXJnZS8wMDZWckpBSmd5MWc1azB3enQwZ3ZqMzBtZDA2Zzc2dy5qcGc)
 ## 目前常用命令
 $git init  
 \#初始化文件夹为git代码库目录
@@ -44,13 +45,14 @@ $git branch -a
 $git remote -v  
 \#可以查看已有的远程关联-这好比一条引线，线的两头可以绑在不同的分支
 
-## 远程连接
+## 远程连接并提交
 $git branch --track [local-branch-name] [remote-branch-name]  
 \#新建分支并与远程分支建立连接
 
 $git remote add [link-name] [remote-url]
 \#添加关联 -**还未绑定分支**  
-$git push --set-upstream [远程关联名] [本地分支名]  **远程对应分支是？**
+$git push --set-upstream [远程关联名] [本地分支名]  
+>~~**远程对应分支是？**~~ - 本地分支在配置关联，push后远程自动生成同名分支 **但是通过branch -r看不见？**
 
 $git remote remove [link-name]  
 \#取消当前分支的远程关联
@@ -67,8 +69,17 @@ $git branch -d [name]
 \#删除本地分支
 
 ## 查看远程与本地仓库的不同
-$git diff [local branch] [remote branch];   eg: $git diff master origin/master(remote/origin/master与origin/master效果相同  
+$git diff [local branch] [remote branch];   eg: $git diff master origin/master(remote/origin/master与origin/master效果相同    
 
+## 拉取远程分支
+$git fetch [关联名] ([远程分支名])  
+\#同步远程仓库到本地仓库，并未更新到工作区 **当感觉状态不对劲时，可用作刷新**
+
+$git checkout -b [本地分支名] [远程分支名]  
+\#在本地新建分支并与远程分支关联 
+
+$git pull (远程分支名)  
+\#拉取远程分支内容到当前本地分支工作区
 
 
 
