@@ -5,7 +5,7 @@ $git init
 \#初始化文件夹为git代码库目录
 
 $git clone [url]  
-\#克隆url项目到当前本地仓库
+\#直接克隆url项目到当前本地仓库，无需建立关联什么的
 
 $git config --list  
 \#查看上前的git配置，可以看用户名与email
