@@ -3,7 +3,8 @@
 是一个实现了servlet接口并重写doGet\doPost方法的特殊类。spring、springMVC等框架底层也是servlet  
 一个应用有多个servlet，一个servlet对于一个服务  
 位于服务端，客户端与数据库的中间。接收http请求，并相应处理(包括操作数据库)，封装http响应并返回给客户端  
-从理解上-我感觉就是一个最低配的service层实现  ？   
+从理解上-我感觉就是一个最低配的service层实现？  
+>大概理解思想和作用就行，具体一些功能、类名之类的不用太去记。后面到框架中再去细究。
 
 # java四大域对象
 1. page(jsp有效)------》page域指的是pageContext  
