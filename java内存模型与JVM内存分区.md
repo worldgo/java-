@@ -10,4 +10,10 @@
 > https://mp.weixin.qq.com/s?__biz=MzU4NzA3MTc5Mg==&mid=2247484606&idx=1&sn=42212c0ac1c123ebee1903d07f88b6db&chksm=fdf0ece1ca8765f7e623d2a3d19ff637d8f2449db0dea2bb63d87e11f63b482cf16c0a007faf&token=2087444891&lang=zh_CN&scene=21#wechat_redirect  
 
 > 内存模型的主内存 = JVM分区的堆内存、内存模型的工作区域 = JVM分区的私有线程栈  
-> JMM是一种抽象的概念，并不实际存在，在逻辑上分工作内存和主内存，但在物理上二者都可能在主存中也可能在Cache或者寄存器中。Java内存分区也是这个道理。
+> JMM是一种抽象的概念，并不实际存在，在逻辑上分工作内存和主内存，但在物理上二者都可能在主存中也可能在Cache或者寄存器中。Java内存分区也是这个道理。   
+
+**深入学习java虚拟机**
+
+
+
+
