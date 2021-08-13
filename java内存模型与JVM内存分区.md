@@ -4,7 +4,8 @@
 > 对应Java程序员来说，理解happens-before是理解JMM的关键?
 
 >https://www.jianshu.com/p/8a58d8335270     --文章来源 https://zhuanlan.zhihu.com/p/29881777、https://www.zhihu.com/column/EnjoyMoving  
->https://blog.csdn.net/alinshen/article/details/80521484  
+>https://blog.csdn.net/alinshen/article/details/80521484    
+>http://www.ifcoding.com/archives/289.html  
 > https://blog.csdn.net/qq_41297896/article/details/89949632  
 > https://mp.weixin.qq.com/s?__biz=MzU4NzA3MTc5Mg==&mid=2247484606&idx=1&sn=42212c0ac1c123ebee1903d07f88b6db&chksm=fdf0ece1ca8765f7e623d2a3d19ff637d8f2449db0dea2bb63d87e11f63b482cf16c0a007faf&token=2087444891&lang=zh_CN&scene=21#wechat_redirect  
 
