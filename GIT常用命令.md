@@ -47,16 +47,16 @@ $git remote -v
 \#可以查看已有的远程关联-这好比一条引线，线的两头可以绑在不同的分支
 
 ## 远程连接并提交
-$git branch --track [local-branch-name] [remote-branch-name]  
-\#新建分支并与远程分支建立连接
-
 $git remote add [link-name] [remote-url]
 \#添加关联 -**还未绑定分支**  
 $git push --set-upstream [远程关联名] [本地分支名]  
->~~**远程对应分支是？**~~ - 本地分支在配置关联，push后远程自动生成同名分支 **但是通过branch -r看不见？**
+>~~**远程对应分支是？**~~ - push后远程自动生成同名分支
 
 $git remote remove [link-name]  
 \#取消当前分支的远程关联
+
+$git branch -vv  
+\#查看现有的远程分支与本地分支的映射关联
 
 ## 切换分支
 $git checkout -b [branch-name]  
