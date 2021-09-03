@@ -102,6 +102,7 @@ $git reflog
 
 >因为git的分支必须指向一个commit，没有任何commit就没有任何分支
 >提交第一个commit后git自动创建master分支
->新建分支在commit之后才会被保存
+>新建分支在commit之后才会被保存  
+>键盘‘q’可以停止当前git命令运行
 
 
