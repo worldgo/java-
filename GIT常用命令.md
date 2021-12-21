@@ -1,12 +1,12 @@
 # GIT
->![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93czEuc2luYWltZy5jbi9sYXJnZS8wMDZWckpBSmd5MWc1azB3enQwZ3ZqMzBtZDA2Zzc2dy5qcGc)
-##工作中用到的git操作流程
+>![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93czEuc2luYWltZy5jbi9sYXJnZS8wMDZWckpBSmd5MWc1azB3enQwZ3ZqMzBtZDA2Zzc2dy5qcGc)  
+## 工作中用到的git操作流程
 1. 进入自己的工作代码文件夹
 2. 右键git bash here 
 3. git clone [远程url]
 4. 进入克隆下来的文件夹 -克隆了整个仓库下来，包括仓库里面含有的分支等git信息；并且自动做了远程关联
 5. 右键git bash here 
-6. git checkout -b [本地分支名] [origin/远程分支名] -新建与远程分支同名的本地分支并关联  
+6. git checkout -b [本地分支名] [origin/远程分支名] -新建与远程分支同名的本地分支并关联；这种方式新建本地分支，分支初始化内容会是对应远程分支的内容，而不是本地master 
 7. git pull origin [远程分支名] -拉取最新
 ## 目前常用命令
 $git init  
